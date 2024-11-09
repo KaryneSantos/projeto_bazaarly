@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaarly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/carrinho.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BAZAARLY</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar produtos">
+            <button><i class="bi bi-search"></i></button> <!-- Ícone de pesquisa substituindo a imagem -->
+        </div>
+        <div class="header-icons">
+            <i class="bi bi-person"></i> <!-- Ícone de pessoa -->
+            <i class="bi bi-cart"></i> <!-- Ícone de carrinho -->
+            <i class="bi bi-heart"></i> <!-- Ícone de lista de desejos -->
+            <i class="bi bi-headset"></i>
+            <i class="bi bi-globe"></i> <!-- Ícone de globo -->
+            <a href="vazio"><i class="bi bi-arrow-left-circle"></i></a>
+            <a href="pagamento"><i class="bi bi-arrow-right-circle"></i></a>
+        </div>
+    </header>
+    
+    
+
+    <nav>
+        <ul>
+            <li>Mobílias</li>
+            <li>Joias e Acessórios</li>
+            <li>Sapatos</li>
+            <li>Roupas de Bebê</li>
+            <li>Roupas Femininas</li>
+            <li>Roupas Masculinas</li>
+            <li>Esportes</li>
+            <li>Itens de Casa</li>
+            <li>Tecnologia e Eletrônicos</li>
+            <li>Livros</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="search-results">
+            <p><strong><i class="bi bi-cart3"></i>>Carrinho</strong></p>
+            <div class="card">
+                <img src="https://jfpratas.com.br/site/uploads/2024/01/IMG-20220301-WA0000-150x150.webp" alt="Produto 1">
+                <div class="card-details">
+                    <h2>PRODUTO 1, VENDIDO POR TAL</h2>
+                    <p class="status">Em estoque</p>
+                    <p class="gift">Este pedido é para presente</p>
+                    <div class="quantity-row">
+                        <label for="quantity-1">QTD:</label>
+                        <select id="quantity-1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <a href="#" class="excluir">EXCLUIR</a> <p>|</p>
+                        <a href="#" class="salvar">SALVAR PARA MAIS TARDE</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>R$ XX,XX</p>
+                    <p>à vista no Pix e boleto ou <br>R$34,90 no cartão de crédito</p>
+                </div>
+            </div> <br>
+    
+            <div class="card">
+                <img src="https://fila.vtexassets.com/arquivos/ids/893909-150-auto?width=150&height=auto&aspect=true" alt="Produto 2">
+                <div class="card-details">
+                    <h2>PRODUTO 2, VENDIDO POR TAL</h2>
+                    <p class="status">Em estoque</p>
+                    <p class="gift">Este pedido é para presente</p>
+                    <div class="quantity-row">
+                        <label for="quantity-2">QTD:</label>
+                        <select id="quantity-2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <a href="#" class="excluir">EXCLUIR</a> <p>|</p>
+                        <a href="#" class="salvar">SALVAR PARA MAIS TARDE</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>R$ XX,XX</p>
+                    <p>à vista no Pix e boleto ou <br>R$34,90 no cartão de crédito</p>
+                </div>
+            </div> <br>
+    
+            <div class="card">
+                <img src="https://img.irroba.com.br/fit-in/150x150/filters:fill(fff):quality(80)/tadeaioo/catalog/air-bone/air-bone/tenis-masculino-ultrabone-air-bone-branco-1.jpg" alt="Produto 3">
+                <div class="card-details">
+                    <h2>PRODUTO 3, VENDIDO POR TAL</h2>
+                    <p class="status">Em estoque</p>
+                    <p class="gift">Este pedido é para presente</p>
+                    <div class="quantity-row">
+                        <label for="quantity-3">QTD:</label>
+                        <select id="quantity-3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <a href="#" class="excluir">EXCLUIR</a> <p>|</p>
+                        <a href="#" class="salvar">SALVAR PARA MAIS TARDE</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>R$ XX,XX</p>
+                    <p>à vista no Pix e boleto ou <br>R$34,90 no cartão de crédito</p>
+                </div>
+            </div> <br>
+            <button class="subtotal">SubTotal(3 produtos):R$ XX,XX</button> <br> <br>
+
+           <button class="finalizar">FINALIZAR PEDIDO</button>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>DÚVIDAS</h3>
+            <ul>
+                <li>Acompanhe seus pedidos</li>
+                <li>Dúvidas frequentes</li>
+                <li>Trocas e devoluções</li>
+            </ul>
+            <!-- Ícones de Visa e Mastercard -->
+            <i class="fa-brands fa-cc-visa payment-icon"></i>
+            <i class="fa-brands fa-cc-mastercard payment-icon"></i>
+        </div>
+        
+    
+        <div class="footer-section">
+            <h3>INSTITUCIONAL</h3>
+            <ul>
+                <li>Quem somos?</li>
+                <li>Política de Privacidade</li>
+                <li>Trabalhe conosco</li>
+            </ul>
+        </div>
+    
+        <div class="footer-section">
+            <h3>FALE CONOSCO</h3>
+            <p><i class="fas fa-phone"></i> (82) 91234-5678</p> <br> <!-- Ícone de telefone -->
+            <p><i class="fas fa-envelope"></i> bazaarly@loja.com.br</p> <!-- Ícone de e-mail -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
