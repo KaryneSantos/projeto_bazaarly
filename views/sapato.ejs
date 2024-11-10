@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazaarly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/css/carrinho.css">
+    <link rel="stylesheet" href="/css/sapato.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></head>
 <body>
     <header>
@@ -17,11 +17,13 @@
             <button><i class="bi bi-search"></i></button> <!-- Ícone de pesquisa substituindo a imagem -->
         </div>
         <div class="header-icons">
-            <a href="/cadastrar"><i class="bi bi-person"></i></a> <!-- Ícone de pessoa -->
+            <i class="bi bi-person"></i> <!-- Ícone de pessoa -->
             <i class="bi bi-cart"></i> <!-- Ícone de carrinho -->
             <i class="bi bi-heart"></i> <!-- Ícone de lista de desejos -->
             <i class="bi bi-headset"></i>
             <i class="bi bi-globe"></i> <!-- Ícone de globo -->
+            <a href="ct-produto"><i class="bi bi-arrow-left-circle"></i></a>
+            <a href="Naoencontrado"><i class="bi bi-arrow-right-circle"></i></a>
         </div>
     </header>
     
@@ -44,19 +46,54 @@
 
     <main>
         <section class="search-results">
-            <p><strong><i class="bi bi-cart"></i>>Carrinho</strong></p>
-            <h2>Seu carrinho do Bazzarly está vazio</h2> <br>
-                       
-            <button class="bntt">Faça login para comprar</button>
-            <button class="bnttt">Inscreva-se agora</button>
-
-            <div class="img">
-                <img src="https://cdn-icons-png.flaticon.com/512/2037/2037457.png" alt="">
+            <p><strong><i class="bi bi-house-door"></i>> SAPATOS</strong></p>
+            <h2>VOCÊ BUSCOU POR "SAPATOS"</h2>
+            <p>Foram encontrados 5 resultados</p>
+    
+            <div class="product-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/736x/2c/2e/5d/2c2e5da0515b14410a38409eab1743a8.jpg" alt="Sapato 1">
+                    <p>SAPATO 1</p>
+                    <p><strong>R$ 19,25</strong></p>
+                    <p>ENVIO NACIONAL</p>
+                </div>
+    
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <img src="https://cdn.awsli.com.br/2500x2500/1343/1343110/produto/256404052/whatsapp-image-2024-02-22-at-10-35-54--6--a8gwluoug4.jpeg" alt="Sapato 2">
+                    <p>SAPATO 2</p>
+                    <p><strong>R$ 19,25</strong></p>
+                    <p>ENVIO NACIONAL</p>
+                </div>
+    
+                <!-- Produto 3 -->
+                <div class="product-card">
+                    <img src="https://images.tcdn.com.br/img/img_prod/473150/tenis_nike_sb_force_58_preto_branco_8595_1_c0fdbd56234c7003ea25202da06b3da7.png" alt="Sapato 3">
+                    <p>SAPATO 3</p>
+                    <p><strong>R$ 19,25</strong></p>
+                    <p>ENVIO NACIONAL</p>
+                </div>
+    
+                <!-- Produto 4 -->
+                <div class="product-card">
+                    <img src="https://acdn.mitiendanube.com/stores/003/316/263/products/img_0722_jpg-581de26769afe10cb117079172166405-1024-1024.jpeg" alt="Sapato 4">
+                    <p>SAPATO 4</p>
+                    <p><strong>R$ 19,25</strong></p>
+                    <p>ENVIO NACIONAL</p>
+                </div>
+    
+                <!-- Produto 5 -->
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/originals/1d/6c/b2/1d6cb26de839b5e4598bb6a0c91c0bee.png" alt="Sapato 5">
+                    <p>SAPATO 5</p>
+                    <p><strong>R$ 19,25</strong></p>
+                    <p>ENVIO NACIONAL</p>
+                </div>
             </div>
-            
         </section>
-        
     </main>
+    
 
     <footer>
         <div class="footer-section">

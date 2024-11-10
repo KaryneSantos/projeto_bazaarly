@@ -155,3 +155,72 @@ button {
 button:hover {
     background-color: #3c2052;
 }
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .container::before {
+        width: 300px;
+        height: 300px;
+        top: -80px;
+        left: -200px;
+    }
+
+    .container::after {
+        width: 150px;
+        height: 150px;
+        bottom: 20px;
+        right: 200px;
+    }
+
+    .login-box {
+        width: 320px;
+        padding: 30px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+
+    .login-box p {
+        font-size: 13px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .container::before {
+        width: 200px;
+        height: 200px;
+        top: -50px;
+        left: -100px;
+    }
+
+    .container::after {
+        width: 100px;
+        height: 100px;
+        bottom: 10px;
+        right: 100px;
+    }
+
+    .login-box {
+        width: 90%;
+        padding: 20px 15px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .login-box p {
+        font-size: 12px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

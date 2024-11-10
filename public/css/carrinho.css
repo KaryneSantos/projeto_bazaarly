@@ -1,4 +1,3 @@
-/* Resetar margens e paddings de todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -75,6 +74,7 @@ header .search-bar input:focus {
     color: #007bff; /* Cor ao passar o mouse */
 }
 
+
 .header-icons i {
     font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
     margin-left: 15px; /* Espaçamento entre os ícones */
@@ -86,6 +86,7 @@ header .search-bar input:focus {
 .header-icons i:hover {
     color: #007bff; /* Cor ao passar o mouse */
 }
+
 
 nav {
     background-color: #4A144C;
@@ -108,6 +109,7 @@ nav ul li {
 /* Estilos da seção de resultados */
 .search-results {
     padding: 40px;
+
     background-color: #EAE7F7;
     max-width: 100vw; /* Garante que a seção de resultados não ultrapasse a largura da tela */
 }
@@ -121,36 +123,10 @@ nav ul li {
     margin: 20px 0;
 }
 
-/* Grid de produtos */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Cinco colunas */
-    gap: 20px;
+.search-results ul {
+    list-style: none;
+    text-align: left;
     margin-top: 20px;
-}
-
-/* Cartões de produto */
-.product-card {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.product-card p {
-    margin: 10px 0;
-}
-
-.product-card p strong {
-    color: #4A144C;
-    font-size: 18px;
 }
 
 /* Estilo para os ícones de pagamento */
@@ -205,215 +181,23 @@ footer img {
 .social-icons a:hover {
     color: #CCC; /* Cor quando o usuário passa o mouse por cima */
 }
-/* Banner de promoção no topo */
-.promotion-banner {
-    text-align: center;
-    background-color: #4A144C;
-    color: #FFFFFF;
-    padding: 40px;
-}
 
-.promotion-banner h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.highlighted-categories {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.category-card {
-    text-align: center;
-    width: 150px;
-}
-
-.category-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.category-card p {
-    margin-top: 10px;
-    color: #FFFFFF;
-    font-size: 14px;
-}
-
-/* Promoção principal */
-.promotion-main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-    background-color: #EAE7F7;
-}
-
-.promo-content {
-    background-color: #FFFFFF;
+.bntt{
+    padding: 7px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 30px;
-    width: 250px;
+    background-color: purple;
+    color: white;
+    border: none;
 }
 
-.promo-text h3 {
-    font-size: 22px;
-    color: #4A144C;
+.bnttt{
+    padding: 7px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    border: none;
 }
 
-.promo-text p {
-    font-size: 18px;
-    color: #000;
-    margin: 10px 0;
-}
-
-.promo-text strong {
-    font-size: 26px;
-    color: #007bff;
-}
-
-.promo-text a {
-    font-size: 14px;
-    color: #007bff;
-    text-decoration: none;
-    margin-top: 20px;
-    display: block;
-}
-
-/* Grid de produtos */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.product-card {
-    text-align: center;
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.product-card p {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.product-card p strong {
-    color: #4A144C;
-    font-size: 18px;
-}
-
-.discount {
-    font-size: 12px;
-    color: green;
-}
-
-.card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e6d1ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.card img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.card-details {
-    flex: 1;
-    margin-left: 20px;
-}
-
-h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.status {
-    color: green;
-    font-weight: bold;
-}
-
-.gift {
-    font-size: 0.9rem;
-    color: #999;
-}
-
-.quantity-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.quantity-row select {
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.excluir, .salvar {
-    font-size: 0.9rem;
-    color: #b19cd9;
-    text-decoration: none;
-}
-
-.price {
-    text-align: right;
-}
-
-.price p {
-    margin-bottom: 5px;
-}
-
-.price p:last-child {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.finalizar{
-    border-radius: 10px;
-    margin: 0px 5px;
-    background-color: #4E2765; /* Tom de verde mais suave */
-    width: 310px;
-    padding: 12px 20px; /* Adiciona espaçamento interno */
-    color: white; /* Torna o texto branco */
-    font-size: 20px; /* Aumenta o tamanho do texto */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: none; /* Remove bordas padrão */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
-    margin-left: 39%;
-    height: 50px;
-}
-
-.subtotal{
-    margin: 0px 5px;
-    background-color: #878787; /* Tom de verde mais suave */
-    width: 1435px;
-    padding: 12px 20px; /* Adiciona espaçamento interno */
-    font-size: 20px; /* Aumenta o tamanho do texto */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: none; /* Remove bordas padrão */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
-    height: 50px;
-    text-align: right;
+img{
+    height: 300px;
 }

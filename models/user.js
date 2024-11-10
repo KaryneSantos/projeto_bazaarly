@@ -17,6 +17,11 @@ const User = sequelize.define('User', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    tipo_usuario: {
+        type: DataTypes.ENUM('vendedor', 'comprador'),
+        allowNull: false,
+        defaultValue: 'comprador',
+    }
 });
 
 User.beforeCreate(async (user, options) => {
