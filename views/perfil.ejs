@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Perfil de Usuário</h2>
+        
+        <div class="text-center mb-4">
+            <img src="path/to/default-profile.png" alt="Imagem de Perfil" class="rounded-circle" width="150" height="150">
+            <form action="/upload-profile-image" method="POST" enctype="multipart/form-data" class="mt-3">
+                <input type="file" name="profile_image" accept="image/*" class="form-control-file">
+                <button type="submit" class="btn btn-primary mt-2">Atualizar Imagem</button>
+            </form>
+        </div>
+        
+        
+        <div class="card p-4">
+            <h5>Informações Pessoais</h5>
+          
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Número de Telefone</label>
+                <input type="tel" id="phone" placeholder="Digite seu telefone">
+            </div>
+    
+            <div class="form-group">
+                <label for="date">Data de Nascimento</label>
+                <input type="date" id="date" placeholder="data de Nascimento">
+            </div>
+    
+            <div class="form-group">
+                <label>Gênero</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="gender" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="gender" value="outros"> Outros</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="Digite seu CPF">
+            </div>
+    
+            <a href="/editar-perfil" class="btn btn-primary mt-3">Editar Perfil</a>
+        </div>
+
+        <div class="mt-4">
+            <a href="/vendedor" class="btn btn-danger">Torna-se vendedor</a>
+        </div>
+        <div class="mt-4">
+            <a href="/logout" class="btn btn-danger">Sair</a>
+        </div>
+    </div>
+</body>
+</html>

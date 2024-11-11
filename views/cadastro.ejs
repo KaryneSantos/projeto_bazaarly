@@ -21,27 +21,29 @@
       <form action="/cadastrar" method="post">
         <div class="input-container">
           <i class="bi bi-person-fill"></i>
-          <input type="text" name="nome_usuario" placeholder="Nome" required>
+          <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Nome" required>
         </div>
         <div class="input-container">
           <i class="bi bi-envelope-fill"></i>
-          <input type="email" name="email" placeholder="Email" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
         <div class="input-container">
           <i class="bi bi-lock-fill"></i>
-          <input type="password" name="senha" placeholder="Senha" required>
+          <input type="password" id="senha" name="senha" placeholder="Senha" required>
         </div>
         <div class="input-container">
             <i class="bi bi-lock-fill"></i>
-            <input type="password" name="confirmacao_senha" placeholder="Confirmação senha" required>
+            <input type="password" id="confirmacao_senha" name="confirmacao_senha" placeholder="Confirmação senha" required>
           </div>
           <select name="tipo_usuario" id="tipo_usuario" required>
             <option value="comprador">Comprador</option>
         </select>
         <button type="submit" class="signup-btn">CADASTRAR</button>
-        <%= msg %>
+        <div class="msg"><%= msg %></div>
       </form>
     </div>
   </div>
+
+  <script src="/js/cadastro.js"></script>
 </body>
 </html>

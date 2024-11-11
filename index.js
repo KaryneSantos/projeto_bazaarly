@@ -28,8 +28,23 @@ app.use('/cadastrar', cadastrarRouter);
 const loginRouter = require('./router/login');
 app.use('/login', loginRouter);
 
+// Rota Perfil de Usuario  
+const perfilRouter = require('./router/perfil');
+app.use('/perfil', perfilRouter);
+
+// Rota vendedor 
+const vendedorRouter = require('./router/vendedor');
+app.use('/vendedor', vendedorRouter);
+
+
+// Rota CNPJ
+const cnpjRouter = require('./router/cnpj');
+app.use('/cnpj', finalizarRouter);
+
+
+
 // Rota carrinho
-const carrinhoRouter = require('./router/carrinho');
+const carrinhoRouter = require('./router/pg_carrinho');
 app.use('/carrinho', carrinhoRouter);
 
 // Rota home

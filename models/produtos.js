@@ -2,6 +2,11 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Produto = sequelize.define('Produto', {
+    produtoId: {
+        type: DataTypes.INTEGER,
+        primaryKey: true, 
+        autoIncrement: true,
+    },
     nome: {
         type: DataTypes.STRING,
         allowNull: false, 
@@ -31,7 +36,7 @@ const Produto = sequelize.define('Produto', {
 Produto.associate = (models) => {
     Produto.hasMany(models.Carrinho, {
         foreignKey: 'produtoId', 
-        as: 'carrinhos',to
+        as: 'carrinho',to
     });
 };
 
