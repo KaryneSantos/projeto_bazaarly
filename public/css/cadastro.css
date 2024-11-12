@@ -159,3 +159,7 @@ body {
 #tipo_usuario {
   display: none;
 }
+
+.msg {
+  color: red;
+}

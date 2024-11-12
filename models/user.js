@@ -35,4 +35,12 @@ User.beforeCreate(async (user) => {
     user.senha = await bcrypt.hash(user.senha, salt);
 });
 
+// Produto.associate = (models) => {
+//     Produto.hasMany(models.Carrinho, {
+//         foreignKey: 'produtoId',
+//         as: 'carrinhos',
+//     });
+// };
+
+
 module.exports = User;

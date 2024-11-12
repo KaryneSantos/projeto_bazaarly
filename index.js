@@ -37,13 +37,11 @@ const vendedorRouter = require('./router/vendedor');
 app.use('/vendedor', vendedorRouter);
 
 
-// Rota CNPJ
-const cnpjRouter = require('./router/cnpj');
-app.use('/cnpj', finalizarRouter);
+// Rota Cadastro de Vendedor
+const cadastroVendedorRouter = require('./router/cadastro_vendedor_juridico');
+app.use('/cadastro_vendedor_juridico', cadastroVendedorRouter);
 
-
-
-// Rota carrinho
+// Rota Carrinho
 const carrinhoRouter = require('./router/pg_carrinho');
 app.use('/carrinho', carrinhoRouter);
 
@@ -51,13 +49,13 @@ app.use('/carrinho', carrinhoRouter);
 const homeRouter = require('./router/home');
 app.use('/home', homeRouter);
 
-// Rota de Joias
-const joiasRouter = require('./router/ct-joias')
-app.use('/ct-joias', joiasRouter)
+// // Rota de Joias
+// const joiasRouter = require('./router/ct-joias')
+// app.use('/ct-joias', joiasRouter)
 
-// Rota de sapato
-const sapatoRouter = require('./router/sapato')
-app.use('/sapato', sapatoRouter)
+// // Rota de sapato
+// const sapatoRouter = require('./router/sapato')
+// app.use('/sapato', sapatoRouter)
 
 
 const port = process.env.PORT || 3000;

@@ -3,48 +3,38 @@ function validarSenha(senha) {
     return regex.test(senha); // Exige que o usuário digite pelo menos 8 caracteres, com maiusculas, minisculas, números e caracteres especiais
 }
 
-
-document.getElementById('form').addEventListener('submit', function(event) {
-    const nome = document.getElementById('nome_usuario').value;
-    const email = document.getElementById('nome_usuario').value;
-    const senha= document.getElementById('nome_usuario').value;
-    const confim_senha = document.getElementById('nome_usuario').value;
-
-    const alerta = document.querySelector('.msg');
-
-    // Verificar se todos os campos obrigátorios estão preenchidos
-
-    if(!nome || !email || !senha || !confim_senha) {
-        console.log('Todos os campos são obrigátorios');
-        alerta.innerHTML = 'Todos os campos são obrigátorios';
-        event.preventDefault();
-        return;
-    }
-
-
-    // Validação de email
+function validarEmail(email) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if(!emailRegex.test(email)){
-        console.log('Por favor, insira um e-mail válido!');
-        alerta.innerHTML = 'Por favor, insira um e-mail válido!';
-        event.preventDefault();
+    return emailRegex.test(email);
+}
+
+document.getElementById("signup-btn").addEventListener("click", function () {
+    const form = document.getElementById("form-cadastro");
+
+    // Realize as validações aqui (ou apenas invoque o `form.submit()` se as validações do back-end já estiverem cobrindo tudo)
+    const nome_usuario = form.elements["nome_usuario"].value;
+    const email = form.elements["email"].value;
+    const senha = form.elements["senha"].value;
+    const confirmacao_senha = form.elements["confirmacao_senha"].value;
+
+    // Exemplo básico de validações no front-end
+    if (!nome_usuario || !email || !senha || !confirmacao_senha) {
+        alert("Todos os campos são obrigatórios!");
+        return;
+    }
+    if (senha !== confirmacao_senha) {
+        alert("As senhas não coincidem!");
+        return;
+    }
+    if (!validarEmail(email)) {
+        alert("Por favor, insira um e-mail válido!");
+        return;
+    }
+    if (!validarSenha(senha)) {
+        alert("A senha deve conter pelo menos 8 caracteres, com letras maiúsculas, minúsculas, números e caracteres especiais!");
         return;
     }
 
-    // Validação de senha
-    if(!validarSenha(senha)){
-        console.log('A senha deve conter pelo menos 8 caracteres, com letras maiúsculas, minúsculas, números e caracteres especiais!');
-        alerta.innerHTML = 'A senha deve conter pelo menos 8 caracteres, com letras maiúsculas, minúsculas, números e caracteres especiais!';
-        event.preventDefault();
-        return;
-    }
-
-    if(senha != confim_senha) {
-        console.log('As senhas não coincidem!');
-        alerta.innerHTML = 'As senhas não coincidem!';
-        event.preventDefault();
-        return;
-    }
-
-    alerta.innerHTML = 'Formulário enviado com sucesso!';
+    // Se todas as validações passarem, envie o formulário
+    form.submit();
 });
